@@ -6,30 +6,160 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yemekler</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+   <!-- Navbar -->
+   <nav class="navbar target">
+      <a href="#" class="navbar-link">
+         <i class="fas fa-home"></i>
+         <span>Ana Menü</span>
+      </a>
+      <a href="#" class="navbar-link">
+         <i class="fas fa-utensils"></i>
+         <span>Et Yemekleri</span>
+      </a>
+      <a href="#" class="navbar-link">
+         <i class="fas fa-hamburger"></i>
+         <span>Burgerler</span>
+      </a>
+      <a href="#" class="navbar-link">
+         <i class="fas fa-pizza-slice"></i>
+         <span>Pizza</span>
+      </a>
+      <a href="#" class="navbar-link">
+         <i class="fas fa-blender-phone"></i>
+         <span>İletişim</span>
+      </a>
+
+   </nav>
+   <div class="menu target"></div>
+
+   <!-- End of Navbar -->
    <div class="container">
     <!-- Section 1 -->
     <section class="section-1">
            <h1 class="section-heading">
             Yemek Çeşitleri
+            
         </h1>
         <div class="section-1-icons">
-           <i class="fas fa-egg change"></i>
-           <i class="fas fa-stroopwafel"></i>
-           <i class="fas fa-cheese"></i>
-           <i class="fas fa-hotdog"></i>
-           <i class="fas fa-drumstick-bite"></i>
-           <i class="fas fa-apple-alt"></i>
-           <i class="fas fa-fish"></i>
-           <i class="fas fa-cookie"></i>
+           <i class="fas fa-fish change"></i>
+           <i class="fa-solid fa-martini-glass"></i>
+           <i class="fa-solid fa-pizza-slice"></i>
+           <i class="fa-solid fa-bacon"></i>
+           <i class="fa-solid fa-utensils"></i>
+           <i class="fa-solid fa-cake-candles"></i>
          </div>
        </section>    
 
     <!-- End Of Section 1 -->
+    <!-- section 2 -->
+    <section class="section-2">
+      <h1 class="section-heading">Meşur Yemekler</h1>
+      <div class="cards-container">
+         <div class="card">
+            <img src="/resimler/logo1.png" class="card-img">
+            <h3 class="card-name">Balik</h3>
+            <button class="card-btn">Şimdi Sipariş</button>
+         </div>
+         <div class="card">
+            <img src="/resimler/logo2.png" class="card-img">
+            <h3 class="card-name">Pide</h3>
+            <button class="card-btn">Şimdi Sipariş</button>
+         </div>
+         <div class="card">
+            <img src="/resimler/logo3.png" class="card-img">
+            <h3 class="card-name">Pizza</h3>
+            <button class="card-btn">Şimdi Sipariş</button>
+         </div>
+      </div>
+      
+    </section>
+
+      <!-- end of section 2 -->
+    <!-- section 3 -->
+    <section class="section-3">
+      <h1 class="section-heading">görsel</h1>
+      <div class="gallery">
+         <a href="#" class="gallery-link" title="Sipariş Ver">
+            <img src="resimler/balik.jpg" class="food-img">
+            <h3 class="food-name">Balık </h3>
+            <p class="food-description">
+               Balıkların iki tarafına da 2-3 adet çizik atın.
+               Bir kasenin içerisine tuz, karabiber ve zeytinyağını 
+               ekleyerek karıştırın.
+               Kaseniz genişse balıkları bu karışıma batırın. 
+               Geniş değilse, fırça yardımıyla balıkların iki 
+               tarafına da karışımdan sürün.
+               
+            </p>
+         </a>
+         <a href="#" class="gallery-link" title="Sipariş Ver">
+            <img src="resimler/corba.jpg" class="food-img">
+            <h3 class="food-name">Çorba</h3>
+            <p class="food-description">
+               sizleri bekliyor! Sebzeli, domatesli, tavuklu, köfteli, 
+               yoğurtlu, terbiyeli veya yöresel en güzel çorba tarifleri
+                ve yapılışları aşama aşama detaylarıyla hemen parmağınızın
+                ucunda
+            </p>
+         </a><a href="#" class="gallery-link" title="Sipariş Ver">
+            <img src="resimler/pide.jpg" class="food-img">
+            <h3 class="food-name">Pide</h3>
+            <p class="food-description">
+                Önce kıymalı içimizi hazırlayalım. Pide yapımında unutulmaması
+                gereken bazı önemli unsurlar var birincisi iç malzemelerinizi 
+                ayrı ayrı robotton geçirin, eğer robotunuz yoksa, çok ince şekilde 
+                doğramanız lazım.
+            </p>
+         </a><a href="#" class="gallery-link" title="Sipariş Ver">
+            <img src="resimler/salata.jpg" class="food-img">
+            <h3 class="food-name">Salata</h3>
+            <p class="food-description">
+               Tüm sebzeleri bir kaseye alın. Üzerine küçük küpler halinde doğranan 
+               kornişon turşuları da ekleyin ve sebzeleri harmanlayın. Küçük bir kasede 
+               yoğurt, mayonez, tuz ve karabiberi iyice karıştırın. 
+            </p>
+         </a><a href="#" class="gallery-link" title="Sipariş Ver">
+            <img src="resimler/tatli.jpg" class="food-img">
+            <h3 class="food-name">Tatli</h3>
+            <p class="food-description">
+               New York pastanesinden dünyaya yayılan magnolia, hafif 
+               tatlıların başında gelmektedir. Magnolia tatlısının en sevilen 
+               çeşidi ise oreo bisküvisiyle hazırlanandır. Oreolu magnoliayı 
+               20 dakikada hazırlayabilirsiniz.
+            </p>
+         </a>
+      </div>
+    </section>
+
+    <!-- End Of section 3 -->
+
+    <!--  section 4 -->
+    <section class="section-4">
+      <div class="section-4-text">
+         <h2 class="section-4-heading">Kayıt Ol</h2>
+         <p class="section-4-paragraph">Yeni ürünler için ilk siz haberdar olun !</p>
+
+      </div>
+      <form class="signup-form">
+         <input type="email" class="signup-form-input" placeholder="E-mail girin">
+         <button type="submit" class="signup-form-btn">
+            <i class="fas fa-arrow-right"> </i>
+         </button>
+      </form>
+      <p class="copyright">Tasarım Rainon &copy;</p>
+    </section>
+
+
+
+    <!-- End Of section 4 -->
+
+
+  
 
    </div> 
-   <script src="sript.js"></script> 
+   <script src="script.js"></script> 
 </body>
 </html>
