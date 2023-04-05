@@ -8,8 +8,8 @@ text-decoration: none;
 outline: none;
 font-family: "Nunito",sans-serif;
 font-weight: 400;
-}
 
+}
 html {
     font-size: 62.5%;
 
@@ -105,6 +105,7 @@ opacity: 1;
   box-shadow: 0.1rem 0.1rem 0.1rem #c20000,
    -0.1rem -0.1rem 0.1rem #c20000;
   cursor: pointer;
+  z-index: 100;
   transition: top 0.4s 0.2s;
 }
 .menu.change {
@@ -120,15 +121,22 @@ opacity: 1;
   position: absolute;
   top: -15rem;
   left: calc(50% - 0.15rem);
-  box-shadow: 0.1rem 0 0.1rem #c20000;
+  box-shadow: 0.1rem 0 0.1rem #ff0101;
 
 }
 /* End of Navbar */
 /* section 1 */
+
+body {
+  background-image: url("background/background2.jpg");
+  background-size: cover;
+}
+
 .section-1 {
+ 
   width: 100%;
   height: 100vh;
-  background-color: #fcf5f5;
+  background-color: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -137,7 +145,7 @@ opacity: 1;
 
 .section-1-icons i {
 font-size: 35rem;
-color: red;
+color: #ff0101;
 position: absolute;
 transform: translate(-50%, -50%) scale(0);
 text-shadow: 0.2rem 0.2rem 0.2rem #474747;
@@ -153,7 +161,7 @@ transition: transform .3s;
 .section-2 {
 width: 100%;
 height: 100vh;
-background-color: #fcf7f7;
+background-color: transparent;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
@@ -248,7 +256,7 @@ box-shadow: -0.2rem -0.2rem -0.2rem #000;
 
 /*section 3*/
 .section-3{
-background-color: #fcf5f5;
+background-color: transparent;
 padding: 5rem 0;
 
 
@@ -442,3 +450,87 @@ cursor: pointer;
 
 
 /*end of section 4*/
+
+/*responsive*/
+@media(max-width: 1400px) {
+  html{
+    font-size: 50%;
+  }
+.section-2 {
+  height: auto;
+  padding: 10rem 0 12rem 0;
+ }
+.cards-container {
+  margin-top: 10rem;
+ }
+.gallery-link {
+  width: 40rem;
+  height: 25rem;
+  margin: 5rem;
+ }
+.food-img {
+  width: 100%;
+  height: 100%;
+ }
+}
+
+@media(max-width: 1000px) {
+  .section-heading {
+    font-size: 9rem;
+    margin: 0 5rem;
+  }
+  .section-1-icons i {
+    font-size: 25rem;
+  }
+  .cards-container {
+    flex-wrap: wrap;
+  }
+  .card {
+    margin: 5rem;
+  }
+  .section-4 {
+    height: 30rem;
+  }
+}
+@media(max-width: 900px) {
+  .navbar-link {
+    margin: 2rem;
+  }
+  .navbar-link i {
+    font-size: 4rem;
+  }
+  .navbar-link span {
+    font-size: 2rem;
+  }
+}
+@media(max-width: 700px) {
+  .selection-heading {
+    font-size: 7rem;
+    margin: 0 10rem;
+  }
+  .selection-1-icons i {
+    font-size: 20rem;
+  }
+  .menu {
+    left: 2rem;
+  }
+  .section-4 {
+    height: 40rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .section-4-text {
+    margin-bottom: 8rem;
+  }
+
+}
+@media(max-width: 550px) {
+  html {
+    font-size: 40%;
+  }
+  .navbar-link {
+    margin: 0 0.7rem;
+  }
+}
+/*end of responsive*/
